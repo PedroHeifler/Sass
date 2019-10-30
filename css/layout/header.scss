@@ -8,10 +8,25 @@ header {
   height: 90px;
   width: 100%;
   position: absolute;
-}
 
-header .container {
-  position: relative;
+  @media (max-width: 980px) {
+    height: auto;
+
+    .container {
+      position: relative;
+    }
+
+    h1 {
+      max-width: 50%;
+      margin: 0 auto;
+
+      img {
+        max-width: 100%;
+        margin: 0.5em auto;
+        display: block;
+      }
+    }
+  }
 }
 
 .menu-principal {
